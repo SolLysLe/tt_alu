@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024 Rebecca G. Bettencourt
+ * Copyright (c) 2024 Sollys Le
  * SPDX-License-Identifier: Apache-2.0
  */
 
