@@ -54,8 +54,8 @@ async def test_project(dut):
         # Enable output
         dut.ui_in.value = 0x80 | a
         await ClockCycles(dut.clk, 1)
-        r1 = dut.uo_out.value & 0xFF
-        r2 = dut.uio_out.value & 0xFF
+        r1 = int(dut.uo_out.value) & 0xFF
+        r2 = int(dut.uio_out.value) & 0xFF
         # Disable output
         dut.ui_in.value = 0xC0 | a
         await ClockCycles(dut.clk, 1)
